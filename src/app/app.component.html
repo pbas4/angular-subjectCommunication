@@ -1,0 +1,35 @@
+<div class="wrapper">
+
+  <h1>Notifications via Subject communication</h1>
+  <br><br>
+
+  <app-notifications></app-notifications>
+
+  <br><br>
+
+  <ul class="notifications">
+    <li *ngFor="let n of notifications">{{ n }}</li>
+  </ul>
+
+</div>
+
+
+<div class="wrapper">
+
+  <h1>Create new forms</h1>
+  <br><br>
+
+  <button (click)=createProject()>Create project</button>
+  <br><br>
+
+
+  <br><br>
+
+  <ul class="notifications">
+    <li *ngFor="let data of inputsData">
+      <app-impute-form [data]="data"></app-impute-form>
+    </li>
+  </ul>
+
+</div>
+
